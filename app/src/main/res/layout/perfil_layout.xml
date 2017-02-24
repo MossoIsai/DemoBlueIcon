@@ -78,42 +78,24 @@
 
         </RelativeLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayout_perfil"
+            android:background="@color/gris_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
 
-            <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fotos" />
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/tablayout_perfil">
 
-            <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mensajes" />
+    </android.support.v4.view.ViewPager>
 
-            <android.support.design.widget.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Likes" />
-        </android.support.design.widget.TabLayout>
-
-
-
-    </LinearLayout>
-
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.isaigarciamoso.demoblueicon.controllers.FragmentPerfil"
-        android:id="@+id/fragment"
-        tools:layout="@layout/fragment_perfil" />
 
 
 </LinearLayout>

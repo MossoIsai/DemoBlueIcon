@@ -12,5 +12,7 @@
     <color name="transparent">#50ffffff</color>
     <color name="editext_color">#c83e4856</color>
     <color name="editext_color2">#222830</color>
+    <color name="gris_layout">#eeeeee</color>
+    <color name="negro">#000000</color>
 
 </resources>
