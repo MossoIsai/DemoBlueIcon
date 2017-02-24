@@ -1,6 +1,7 @@
 package com.isaigarciamoso.demoblueicon.controllers;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -11,6 +12,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.isaigarciamoso.demoblueicon.R;
@@ -25,6 +27,7 @@ public class Perfil  extends AppCompatActivity{
     private ImageView imagenPerfil;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private ImageButton btnUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,16 @@ public class Perfil  extends AppCompatActivity{
         imagenPerfil = (ImageView)findViewById(R.id.perfil_img);
         tabLayout = (TabLayout)findViewById(R.id.tablayout_perfil);
         viewPager = (ViewPager)findViewById(R.id.viewPager);
+        btnUser = (ImageButton)findViewById(R.id.barImage2);
+        btnUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),DetalleUsuario.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         viewPager.setAdapter( new CostumAdapter(getSupportFragmentManager(),getApplicationContext()));
 
         Blurry.with(getApplicationContext())

@@ -14,5 +14,10 @@
     <color name="editext_color2">#222830</color>
     <color name="gris_layout">#eeeeee</color>
     <color name="negro">#000000</color>
+    <color name="lila">#e4e1eb</color>
+    <color name="lila2">#d9cdf4</color>
+    <color name="azul4">#1888c1</color>
+
+
 
 </resources>

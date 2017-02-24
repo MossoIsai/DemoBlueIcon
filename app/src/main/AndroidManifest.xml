@@ -30,5 +30,10 @@
         <activity android:name=".controllers.Perfil"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
+        <activity android:name=".controllers.DetalleUsuario"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+
     </application>
 </manifest>

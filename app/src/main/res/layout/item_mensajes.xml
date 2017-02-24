@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text=" @AbMosso"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/azul3"
+        android:textSize="10dp"
+        android:id="@+id/twitter" />
+
+    <TextView
+        android:text="Hace 1 hora"
+        android:textSize="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_below="@+id/twitter"
+        android:layout_alignLeft="@+id/twitter"
+        android:layout_alignStart="@+id/twitter"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:text="respondió a tu comentario en "
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/respondio"
+        android:textSize="9dp"
+        android:layout_alignBaseline="@+id/twitter"
+        android:layout_alignBottom="@+id/twitter"
+        android:layout_toRightOf="@+id/twitter"
+        android:layout_toEndOf="@+id/twitter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="Bardemar"
+        android:textColor="@color/negro"
+        android:textStyle="bold"
+        android:textSize="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/bardemar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignBaseline="@+id/respondio"
+        android:layout_alignBottom="@+id/respondio"
+        android:layout_toRightOf="@+id/respondio"
+        android:layout_toEndOf="@+id/respondio" />
+</RelativeLayout>
