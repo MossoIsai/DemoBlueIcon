@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#735d95</color>
+    <color name="colorPrimaryDark">#735d95</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gris">#5c5c5c</color>
+    <color name="gris2">#9e9e9e</color>
+    <color name="azul_rey">#2f577f</color>
+    <color name="blanco">#fefefe</color>
+    <color name="azul2">#26456d</color>
+    <color name="azul3">#8cc2e8</color>
+    <color name="transparent">#50ffffff</color>
+    <color name="editext_color">#c83e4856</color>
+    <color name="editext_color2">#222830</color>
+
+</resources>

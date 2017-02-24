@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="0.3"
+            android:elevation="100dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/pGlobalHeaderLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/cuponera_tittle"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ds_sonata"
+                    android:gravity="center" />
+                <!--<TextView
+                    android:id="@+id/cuponera_tittle"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/blanco"
+                    android:text="Home"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" />-->
+
+
+
+
+                <ImageButton
+                    android:id="@+id/barImage1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="19dp"
+                    android:background="@drawable/back" />
+
+                <ImageButton
+                    android:id="@+id/barImage2"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/user_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimary">
+
+    </LinearLayout>
+</LinearLayout>
+
