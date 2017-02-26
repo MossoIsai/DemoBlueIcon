@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/pestanas"
+        android:icon="@drawable/pestanas"
+        />
+    <item android:title="@string/megusta"
+        android:icon="@drawable/megusta"/>
+
+    <item android:title="@string/user"
+        android:icon="@drawable/user_detail"/>
+
+</menu>

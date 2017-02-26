@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.isaigarciamoso.demoblueicon.R;
 
@@ -17,6 +18,10 @@ import com.isaigarciamoso.demoblueicon.R;
 public class DetalleUsuario extends AppCompatActivity {
     private Button cancelar;
     private Button listo;
+    private EditText politicas;
+    private EditText condiciones;
+    private EditText bibliotecas;
+    private EditText cerrarSession;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,24 @@ public class DetalleUsuario extends AppCompatActivity {
     public void initViews(){
         listo = (Button)findViewById(R.id.listo);
         cancelar = (Button)findViewById(R.id.cancelar);
+        politicas = (EditText)findViewById(R.id.politicas);
+        condiciones = (EditText)findViewById(R.id.condiciones);
+        bibliotecas = (EditText)findViewById(R.id.bibliotecas);
+        cerrarSession = (EditText)findViewById(R.id.cerrarSession);
+
+        politicas.setEnabled(false);
+        condiciones.setEnabled(false);
+        bibliotecas.setEnabled(false);
+        cerrarSession.setEnabled(false);
+        cerrarSession.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(getApplicationContext(),Splash.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         listo.setOnClickListener(new View.OnClickListener() {
             @Override

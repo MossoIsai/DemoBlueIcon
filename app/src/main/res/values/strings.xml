@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DemoBlueIcon</string>
+    <string name="megusta">Me Gusta</string>
+    <string name="user">Perfil</string>
+    <string name="pestanas">Directorio</string>
 </resources>
